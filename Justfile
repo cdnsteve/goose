@@ -417,3 +417,8 @@ build-test-tools:
 record-mcp-tests: build-test-tools
   GOOSE_RECORD_MCP=1 cargo test --package goose --test mcp_integration_test
   git add crates/goose/tests/mcp_replays/
+
+[working-directory: 'ui/desktop-tauri']
+tauri:
+  pnpm install
+  pnpm tauri dev
