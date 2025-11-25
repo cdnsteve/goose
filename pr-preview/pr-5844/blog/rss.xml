@@ -13,7 +13,7 @@
             <link>https://block.github.io/goose/pr-preview/pr-5844/blog/2025/11/21/social-media-agent-automation</link>
             <guid>https://block.github.io/goose/pr-preview/pr-5844/blog/2025/11/21/social-media-agent-automation</guid>
             <pubDate>Fri, 21 Nov 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Join me as I build a fully automated social media agent using MCP servers to fetch content and post through Sprout Social. No more manual social promo!]]></description>
+            <description><![CDATA[I built a fully automated social media agent using MCP servers to fetch content and post through Sprout Social.]]></description>
             <content:encoded><![CDATA[<p><img decoding="async" loading="lazy" alt="blog cover" src="https://block.github.io/goose/pr-preview/pr-5844/assets/images/header-image-7f5ab50f65332fb53302ca30a3f86e46.png" width="1280" height="720" class="img_ev3q"></p>
 <blockquote>
 <p>Creating content is fun.<br>
@@ -21,9 +21,8 @@
 </blockquote>
 <p>When I posted that on LinkedIn the other night, I realized I'm definitely not the only one who feels this way. You spend hours making this masterpiece, and then you have to remember to promote it across multiple platforms every single time.</p>
 <p>It’s exhausting, so I decided to automate it.</p>
-<p>And yeah… I definitely got a little too excited and started coding before the livestream. I was up until 8 PM because once the idea hit, I had to see if it would actually work.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-game-plan">The Game Plan<a href="https://block.github.io/goose/pr-preview/pr-5844/blog/2025/11/21/social-media-agent-automation#the-game-plan" class="hash-link" aria-label="Direct link to The Game Plan" title="Direct link to The Game Plan" translate="no">​</a></h2>
-<p>Here's what we're building: two <a href="https://modelcontextprotocol.io/docs/getting-started/intro" target="_blank" rel="noopener noreferrer" class="">Model Context Protocol servers</a> that work together to handle all our social media promotion automatically.</p>
+<p>Here's what we're building: two <a href="https://modelcontextprotocol.io/docs/getting-started/intro" target="_blank" rel="noopener noreferrer" class="">MCP servers</a> that work together to handle all our social media promotion automatically.</p>
 <p><strong>MCP Server #1: Content Fetcher</strong><br>
 <!-- -->This one goes out and grabs all our content from:</p>
 <ul>
