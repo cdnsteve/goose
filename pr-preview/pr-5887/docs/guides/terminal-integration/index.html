@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZS5D6SB4ZJ"></script>
 <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-ZS5D6SB4ZJ",{anonymize_ip:!0})</script><link rel="stylesheet" href="/goose/pr-preview/pr-5887/assets/css/styles.5455f9bf.css">
-<script src="/goose/pr-preview/pr-5887/assets/js/runtime~main.fc9c97d4.js" defer="defer"></script>
+<script src="/goose/pr-preview/pr-5887/assets/js/runtime~main.1a99f1d3.js" defer="defer"></script>
 <script src="/goose/pr-preview/pr-5887/assets/js/main.34b4d98b.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -65,7 +65,9 @@
 <li class="">Installs a preexec hook that calls <code>goose term log</code> for each command</li>
 <li class="">Optionally installs a command-not-found handler (with <code>--default</code>)</li>
 </ol>
-<p>The hook runs <code>goose term log &lt;command&gt; &amp;</code> in the background, which appends to a local history file. When you run <code>@goose</code>, goose reads commands from this file that were logged since your last message.</p>
+<p>The hook runs <code>goose term log &lt;command&gt; &amp;</code> in the background, which appends to the goose session.
+When you run <code>@goose</code>, goose reads commands from goose session any commands that happened since it
+was last called and incorporates them in the next call.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="session-management">Session Management<a href="#session-management" class="hash-link" aria-label="Direct link to Session Management" title="Direct link to Session Management" translate="no">​</a></h2>
 <p>By default a new goose session is created each time you run init and
 that session lasts as long as you keep that terminal open.</p>
