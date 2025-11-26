@@ -13,7 +13,7 @@
         <link href="https://block.github.io/goose/pr-preview/pr-5884/blog/2025/11/26/mcp-for-devs"/>
         <updated>2025-11-26T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[If you think MCPs are overhyped, here's what you're missing]]></summary>
-        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="blog cover" src="https://block.github.io/goose/pr-preview/pr-5884/assets/images/mcp-for-devs-f2b107fe8fdddf0100022431ed1a536d.png" width="1200" height="630" class="img_ev3q"></p>
+        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="blog cover" src="https://block.github.io/goose/pr-preview/pr-5884/assets/images/mcp-for-devs-0cbea02edffded1a26cec5f19a2a61b1.png" width="1200" height="630" class="img_ev3q"></p>
 <p>Lately, I've seen more developers online starting to side eye MCP. There was a <a href="https://x.com/ibuildthecloud/status/1990221860018204721" target="_blank" rel="noopener noreferrer" class="">tweet</a> by Darren Shepherd that summed it up well:</p>
 <blockquote>
 <p>"Most devs were introduced to MCP through coding agents (Cursor, VSCode) and most devs struggle to get value out of MCP in this use case... so they are rejecting MCP because they have a CLI and scripts available to them which are way better for them."</p>
