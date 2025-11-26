@@ -84,7 +84,7 @@ goose: Done. Here's the PR.</p>
 <hr>
 <p>Could you script all this with CLIs and APIs? Sure, if you want to spend your weekend writing glue code. But why would you want to do that when MCP gives you that power right out of the box... in any MCP client?!</p>
 <p>So no, MCPs are not overhyped. They're how you plug AI into everything you use: Slack, GitHub, Jira, Chrome, docs, codebases - and make that stuff work <em>together</em> in new ways.</p>
-<p>Recently, Anthropic called out the <a href="https://www.anthropic.com/engineering/advanced-tool-use" target="_blank" rel="noopener noreferrer" class="">real issue</a>: most dev setups load tools naively, bloat the context, and confuse the model. It's not the protocol that's broken. It's that most people (and agents) haven't figured out how to use it well yet. Fortunately, goose has - it manages MCPs by default, enabling and disabling as you need them.</p>
+<p>Recently, Anthropic called out the <a href="https://www.anthropic.com/engineering/advanced-tool-use" target="_blank" rel="noopener noreferrer" class="">real issue</a>: most dev setups load tools naively, bloat the context, and confuse the model. It's not the protocol that's broken. It's that most people (and agents) haven't figured out how to use it well yet. Fortunately, goose has - it <a class="" href="https://block.github.io/goose/pr-preview/pr-5884/docs/mcp/extension-manager-mcp">manages MCPs by default</a>, enabling and disabling as you need them.</p>
 <p>But I digress.</p>
 <p>Step outside the IDE, and that's when you really start to see the magic.</p>
 <p>P.S. Happy first birthday, MCP! 🎉</p>
