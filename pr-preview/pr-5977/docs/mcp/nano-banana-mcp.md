@@ -31,9 +31,8 @@ This tutorial covers how to add the [Nano Banana MCP Server](https://github.com/
       type="stdio"
       command="npx"
       args={["nano-banana-mcp"]}
-      timeout={300}
       envVars={[
-        { name: "GEMINI_API_KEY", label: "Description or placeholder value" }
+        { name: "GEMINI_API_KEY", label: "Gemini API Key" }
       ]}
       apiKeyLink="https://aistudio.google.com/api-keys"
       apiKeyLinkText="Gemini API Key"
