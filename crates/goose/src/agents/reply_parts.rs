@@ -16,6 +16,7 @@ use crate::providers::toolshim::{
     modify_system_prompt_for_tool_json, OllamaInterpreter,
 };
 
+use crate::agents::code_execution_extension::EXTENSION_NAME as CODE_EXECUTION_EXTENSION;
 use crate::agents::recipe_tools::dynamic_task_tools::should_enabled_subagents;
 use crate::session::SessionManager;
 #[cfg(test)]
@@ -137,6 +138,17 @@ impl Agent {
         let frontend_tools = self.frontend_tools.lock().await;
         for frontend_tool in frontend_tools.values() {
             tools.push(frontend_tool.tool.clone());
+        }
+
+        // When code_execution extension is active, only expose its tools to the model.
+        // The extension can still access other tools internally via get_prefixed_tools_excluding.
+        let code_execution_active = self
+            .extension_manager
+            .is_extension_enabled(CODE_EXECUTION_EXTENSION)
+            .await;
+        if code_execution_active {
+            let code_exec_prefix = format!("{CODE_EXECUTION_EXTENSION}__");
+            tools.retain(|tool| tool.name.starts_with(&code_exec_prefix));
         }
 
         if !router_enabled {

@@ -637,6 +637,10 @@ impl ExtensionManager {
         Ok(self.extensions.lock().await.keys().cloned().collect())
     }
 
+    pub async fn is_extension_enabled(&self, name: &str) -> bool {
+        self.extensions.lock().await.contains_key(name)
+    }
+
     pub async fn get_extension_configs(&self) -> Vec<ExtensionConfig> {
         self.extensions
             .lock()
